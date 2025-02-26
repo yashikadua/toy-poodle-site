@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Experience with Toffee</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(to bottom, rgba(75, 46, 46, 0.85), rgba(192, 159, 128, 0.85));
+      font-family: 'Montserrat', sans-serif;
+      color: #FFFFFF;
+      margin: 0;
+      padding: 0;
+    }
+    h3 {
+      text-align: center;
+      margin-top: 50px;
+      font-size: 36px;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+    }
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+      padding: 0 40px;
+      margin-bottom: 20px;
+    }
+    .content {
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 15px;
+      padding: 30px;
+      max-width: 800px;
+      margin: 50px auto;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+    .menu {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      background: linear-gradient(to bottom, rgba(75, 46, 46, 0.85), rgba(192, 159, 128, 0.85));
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 250px;
+      padding-top: 50px;
+      box-shadow: 5px 0 15px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease-in-out;
+      transform: translateX(-100%);
+    }
+    .menu.show {
+      transform: translateX(0);
+      display: flex;
+    }
+    .menu a {
+      text-decoration: none;
+      color: #FFFFFF;
+      font-size: 18px;
+      padding: 10px;
+      text-align: center;
+      width: 100%;
+      transition: background-color 0.3s, color 0.3s;
+      margin: 10px 0;
+    }
+    .menu a:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+      color: #ffcc00;
+    }
+    .menu-btn {
+      font-size: 30px;
+      position: fixed;
+      top: 15px;
+      left: 15px;
+      cursor: pointer;
+      z-index: 10;
+      background: rgba(0, 0, 0, 0.5);
+      color: #FFFFFF;
+      padding: 10px 30px;
+      border-radius: 10px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    .menu-btn:hover {
+      color: #CCCCCC;
+      background: rgba(0, 0, 0, 0.7);
+    }
+    img {
+      width: 90%;
+      max-width: 600px;
+      height: auto;
+      display: block;
+      margin: 20px auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+  </style>
+  <script>
+    function toggleMenu() {
+      var menu = document.getElementById('menu');
+      menu.classList.toggle('show');
+    }
+  </script>
+</head>
+<body>
+  <div class="menu-btn" onclick="toggleMenu()">☰</div>
+  <div class="menu" id="menu">
+    <a href="Home.html"><i class="fas fa-home"></i> Home</a>
+    <a href="About.html"><i class="fas fa-user"></i> About</a>
+    <a href="Strength.html"><i class="fas fa-dumbbell"></i> Strength</a>
+    <a href="Weakness.html"><i class="fas fa-heart-broken"></i> Weakness</a>
+    <a href="Experience.html"><i class="fas fa-briefcase"></i> My Experience</a>
+    <a href="Gallery.html"><i class="fas fa-images"></i> Gallery</a>
+  </div>
+  <div class="content">
+    <h3>The Enchanting World of Toffee</h3>
+    <img src="C:/Users/Hp/OneDrive/Desktop/Toffee website/Gallery img/img 12.jpg" alt="Toy Poodle Toffee">
+
+    <p>
+      Living with Toffee, my delightful Toy Poodle, is like basking in a constant glow of warmth and wonder. From the moment he trotted into our lives at just 50 days old, his tiny frame and soulful eyes enchanted everyone around him. Named for his sweet, irresistible charm, Toffee quickly became the heartbeat of our home.
+    </p>
+
+    <img src="C:/Users/Hp/OneDrive/Desktop/Toffee website/Gallery img/img 26.webp" alt="Toffee Playing">
+
+    <p>
+      Every day with Toffee is a new adventure. His insatiable curiosity leads him to explore every corner, transforming ordinary moments into magical escapades. Whether he's playfully chasing his squeaky toys or turning a simple object into a source of amusement, his energy uplifts the spirit.
+    </p>
+
+    <img src="C:/Users/Hp/OneDrive/Desktop/Toffee website/Gallery img/img 27.jpg" alt="Toffee Jumping in Leaves">
+
+    <p>
+      One of our most cherished traditions is the annual leap into a freshly raked pile of leaves. Toffee’s jubilant bounds and spirited antics in the cascade of colors never fail to fill our hearts with laughter and delight.
+    </p>
+
+    <img src="C:/Users/Hp/OneDrive/Desktop/Toffee website/Gallery img/img 28.jpg" alt="Toffee Training">
+
+    <p>
+      Training Toffee is an adventure filled with playful challenges and tender victories. His mischievous streak keeps me on my toes, yet his eagerness to learn transforms every lesson into a bonding experience.
+    </p>
+
+    <img src="C:/Users/Hp/OneDrive/Desktop/Toffee website/Gallery img/img 29.jpg" alt="Toffee Snuggling">
+
+    <p>
+      Beyond play, Toffee has a gentle soul that knows how to comfort. He senses when someone feels down, offering a soft nuzzle or a warm cuddle that brings solace on the toughest days.
+    </p>
+
+    <img src="C:/Users/Hp/OneDrive/Desktop/Toffee website/Gallery img/img 30.jpg" alt="Toffee Having Fun Indoors">
+
+    <p>
+      I still smile recalling a rainy afternoon when Toffee turned our living room into his personal wonderland. With nothing more than an empty paper towel roll, he dashed around with such infectious glee that our home filled with laughter and light.
+    </p>
+
+    <p>
+      In every joyful bark and gentle nudge, Toffee reminds us that magic lies in the simple moments. His presence transforms everyday life into a heartwarming adventure, celebrating the beauty of living in the now.
+    </p>
+  </div>
+</body>
+</html>

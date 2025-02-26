@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Memory</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <style>
+       body {
+            background: linear-gradient(to bottom, #4B2E2E, #C09F80); /* Ensures a smooth gradient */
+            background-size: 100% 100%; /* Covers entire screen */
+            background-attachment: fixed; /* Prevents scrolling issues */
+            background-repeat: no-repeat; /* Stops any repeating effect */
+            font-family: Arial, sans-serif;
+            color: #FFFFFF;
+            margin-top:160px;
+            padding: 0;
+            margin-bottom:180px;
+        }
+        .menu {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            background-color: linear-gradient(to bottom, #4B2E2E, #C09F80);
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 250px;
+            padding-top: 50px;
+            box-shadow: 5px 0 15px rgba(0, 0, 0, 0.5);
+        }
+        .menu a {
+            text-decoration: none;
+            color: #FFFFFF;
+            font-size: 18px;
+            padding: 10px;
+            text-align: center;
+            width: 100%;
+            transition: background-color 0.3s, color 0.3s;
+            margin: 10px 0;
+        }
+        .menu a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            color: #ffcc00;
+        }
+        .menu-btn {
+            font-size: 30px;
+            position: fixed;
+            top: 15px;
+            left: 15px;
+            cursor: pointer;
+            z-index: 10;
+            background: rgba(0, 0, 0, 0.5); /* Dark transparent background */
+            color: #FFFFFF; /* Text color */
+            padding: 10px 30px; /* Padding for better click area */
+            border-radius: 10px; /* Rounded corners */
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .menu-btn:hover {
+            color: #CCCCCC;
+            background: rgba(0, 0, 0, 0.7); /* Slightly darker background on hover */
+        }
+        .image-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin: 20px;
+        }
+        .image-gallery img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            margin: 10px;
+            border-radius: 15px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .image-gallery img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .image-gallery img {
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        /* Media Queries for Responsive Design */
+        @media (max-width: 768px) {
+            .menu {
+                width: 100%;
+                padding-top: 10px;
+            }
+            .menu a {
+                font-size: 16px;
+                padding: 8px;
+            }
+            .image-gallery {
+                margin: 10px;
+                gap: 5px;
+            }
+            .image-gallery img {
+                width: 150px;
+                height: 150px;
+                margin: 5px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .menu-btn {
+                font-size: 24px;
+                padding: 8px 20px;
+            }
+            .menu a {
+                font-size: 14px;
+                padding: 6px;
+            }
+            .image-gallery img {
+                width: 120px;
+                height: 120px;
+                margin: 4px;
+            }
+        }
+    </style>
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById('menu');
+            if (menu.style.display === 'flex') {
+                menu.style.display = 'none';
+            } else {
+                menu.style.display = 'flex';
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="menu-btn" onclick="toggleMenu()">☰</div>
+    <div class="menu" id="menu">
+        <a href="Home.html"><i class="fas fa-home"></i> Home</a>
+        <a href="About.html"><i class="fas fa-user"></i> About</a>
+        <a href="Strength.html"><i class="fas fa-dumbbell"></i> Strength</a>
+        <a href="Weakness.html"><i class="fas fa-heart-broken"></i> Weakness</a>
+        <a href="Experience.html"><i class="fas fa-briefcase"></i> My Experience</a>
+        <a href="Gallery.html"><i class="fas fa-images"></i> Gallery</a>
+    </div>
+    <div class="image-gallery">
+        <img src="C:\Users\Hp\OneDrive\Desktop\Toffee website\Gallery img\img1.jpg" alt="Toy Poodle Image 1">
+        <img src="C:\Users\Hp\OneDrive\Desktop\Toffee website\Gallery img\img 2.jpg" alt="Toy Poodle Image 2">
+        <img src="C:\Users\Hp\OneDrive\Desktop\Toffee website\Gallery img\img 3.jpg" alt="Toy Poodle Image 3">
+        <img src="C:\Users\Hp\OneDrive\Desktop\Toffee website\Gallery img\img 4.jpg" alt="Toy Poodle Image 4">
+        <img src="C:\Users\Hp\OneDrive\Desktop\Toffee website\Gallery img\img 5.jpg" alt="Toy Poodle Image 5">
+        <img src="C:\Users\Hp\OneDrive\Desktop\Toffee website\Gallery img\img 6.jpg" alt="Toy Poodle Image 6">
+        <img src="C:\Users\Hp\OneDrive\Desktop\Toffee website\Gallery img\img 7.jpg" alt="Toy Poodle Image 7">
+        <img src="C:\Users\Hp\OneDrive\Desktop\Toffee website\Gallery img\img 8.jpg" alt="Toy Poodle Image 8">
+        <img src="C:\Users\Hp\OneDrive\Desktop\Toffee website\Gallery img\img 9.webp" alt="Toy Poodle Image 9">
+        <img src="C:\Users\Hp\OneDrive\Desktop\Toffee website\Gallery img\img 12.jpg" alt="Toy Poodle Image 10">
+        <img src="C:\Users\Hp\OneDrive\Desktop\Toffee website\Gallery img\img 11.webp" alt="Toy Poodle Image 11">
+        <img src="C:\Users\Hp\OneDrive\Desktop\Toffee website\Gallery img\img 13.webp" alt="Toy Poodle Image 12">
+        <img src="C:\Users\Hp\OneDrive\Desktop\Toffee website\Gallery img\img 14.jpg" alt="Toy Poodle Image 13">
+        <img src="C:\Users\Hp\OneDrive\Desktop\Toffee website\Gallery img\img 15.jpg" alt="Toy Poodle Image 14">
+        <img src="C:\Users\Hp\OneDrive\Desktop\Toffee website\Gallery img\img 16.jpg" alt="Toy Poodle Image 15">
+        <img src="C:\Users\Hp\OneDrive\Desktop\Toffee website\Gallery img\img 17.jpg" alt="Toy Poodle Image 16">
+        <img src="C:\Users\Hp\OneDrive\Desktop\Toffee website\Gallery img\img 18.webp" alt="Toy Poodle Image 17">
+        <img src="C:\Users\Hp\OneDrive\Desktop\Toffee website\Gallery img\img 19.webp" alt="Toy Poodle Image 18">
+        <img src="C:\Users\Hp\OneDrive\Desktop\Toffee website\Gallery img\img 20.jpg" alt="Toy Poodle Image 19">
+        <img src="C:\Users\Hp\OneDrive\Desktop\Toffee website\Gallery img\img 21.webp" alt="Toy Poodle Image 20">
+        <img src="C:\Users\Hp\OneDrive\Desktop\Toffee website\Gallery img\img 22.webp" alt="Toy Poodle Image 21">
+        <img src="C:\Users\Hp\OneDrive\Desktop\Toffee website\Gallery img\img 23.webp" alt="Toy Poodle Image 22">
+        <img src="C:\Users\Hp\OneDrive\Desktop\Toffee website\Gallery img\img 24.webp" alt="Toy Poodle Image 23">
+        <img src="C:\Users\Hp\OneDrive\Desktop\Toffee website\Gallery img\img 25.webp" alt="Toy Poodle Image 24">
+    </div>
+</body>
+</html>

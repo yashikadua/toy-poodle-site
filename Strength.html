@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Positive Traits of The Toy Poodle</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <style>
+        body {
+            background: linear-gradient(to bottom, rgba(75, 46, 46, 0.85), rgba(192, 159, 128, 0.85));
+            font-family: Arial, sans-serif;
+            color: #FFFFFF;
+            margin: 0;
+            padding: 0;
+        }
+        h3 {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 36px;
+        }
+        h2 {
+            margin-top: 40px;
+            font-size: 28px;
+        }
+        h5 {
+            font-size: 18px;
+            line-height: 1.6;
+            padding: 20px 40px;
+            margin: 0;
+        }
+        .content {
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 15px;
+            padding: 20px;
+            max-width: 800px;
+            margin: 50px auto;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        }
+        .menu {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            background-color: linear-gradient(to bottom, rgba(75, 46, 46, 0.85), rgba(192, 159, 128, 0.85));
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 250px;
+            padding-top: 50px;
+            box-shadow: 5px 0 15px rgba(0, 0, 0, 0.5);
+        }
+        .menu a {
+            text-decoration: none;
+            color: #FFFFFF;
+            font-size: 18px;
+            padding: 10px;
+            text-align: center;
+            width: 100%;
+            transition: background-color 0.3s, color 0.3s;
+            margin: 10px 0;
+            margin-top: 5px 0;
+        }
+        .menu a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            color: #ffcc00;
+        }
+        .menu-btn {
+            font-size: 30px;
+            position: fixed;
+            top: 15px;
+            left: 15px;
+            cursor: pointer;
+            z-index: 10;
+            background: rgba(0, 0, 0, 0.5); /* Dark transparent background */
+            color: #FFFFFF; /* Text color */
+            padding: 10px 30px; /* Padding for better click area */
+            border-radius: 10px; /* Rounded corners */
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .menu-btn:hover {
+            color: #CCCCCC;
+            background: rgba(0, 0, 0, 0.7); /* Slightly darker background on hover */
+        }
+        img{
+            width: 600px;
+            height:auto;
+            display: block;
+            margin-left: 6%; 
+        }
+    </style>
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById('menu');
+            if (menu.style.display === 'flex') {
+                menu.style.display = 'none';
+            } else {
+                menu.style.display = 'flex';
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="menu-btn" onclick="toggleMenu()">☰</div>
+    <div class="menu" id="menu">
+        <a href="Home.html"><i class="fas fa-home"></i> Home</a>
+        <a href="About.html"><i class="fas fa-user"></i> About</a>
+        <a href="Strength.html"><i class="fas fa-dumbbell"></i> Strength</a>
+        <a href="Weakness.html"><i class="fas fa-heart-broken"></i> Weakness</a>
+        <a href="Experience.html"><i class="fas fa-briefcase"></i> My Experience</a>
+        <a href="Gallery.html"><i class="fas fa-images"></i> Gallery</a>
+    </div>
+    <div class="content">
+        <h3>Come, Let's discuss positive traits of<br> The Toy Poodle!</h3>
+        <h5>While Toy Poodles might not be the biggest or strongest breed, they possess several strengths that make them wonderful companions:</h5>
+        <h2>Intelligence: </h2>
+        <h5>
+            Toy Poodles are incredibly smart. They are quick learners and excel at obedience training, making them adaptable and well-behaved. They can be taught a variety of tricks and commands.
+        </h5>
+        <h2>Agility :</h2>
+        <h5>
+            Despite their small size, Toy Poodles are surprisingly agile and athletic. They enjoy activities like walks, runs, and playing fetch. Their agility makes them suitable for various canine sports like agility courses and even dock diving.
+        </h5>
+        <img src="C:\Users\Hp\OneDrive\Desktop\Toffee website\Img\img 8.jpg" style="height: 550px;width: 550px;">
+        <h2>Loyalty and Affection:</h2>
+        <h5>
+            Toy Poodles are known for their deep bond with their families. They thrive on human companionship and are often considered "velcro dogs" because they love to be close to their owners.
+        </h5>
+        <h2>Hypoallergenic Coat:</h2>
+        <h5>
+            Their curly, non-shedding coat is considered hypoallergenic, making them a great choice for people with allergies. While no dog is 100% hypoallergenic, Poodles produce less dander.     
+        </h5>
+        <h2>Adaptability:</h2>
+        <h5>
+            Toy Poodles can adapt well to various living situations, including apartments, as long as they get enough exercise. They fit well with families, singles, and seniors.
+        </h5>
+        <img src="C:\Users\Hp\OneDrive\Desktop\Toffee website\Img\img 9.jpg">
+        <h2>Alertness:</h2>
+        <h5>
+            They are naturally alert and aware of their surroundings. They make good watchdogs, alerting their owners to any unusual activity, though they are not typically aggressive.
+        </h5>
+    </div>
+</body>
+</html>
